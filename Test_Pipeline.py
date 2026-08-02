@@ -105,8 +105,8 @@ def run_image_inference(model, image_path, conf_threshold):
         cv2.imwrite(out_path, annotated_frame)
         print(f"[SUCCESS] Annotated image saved to: {out_path}")
         
-        # cv2.imshow("YOLOv12 Deployment View - Press any key to close", annotated_frame)
-        # cv2.waitKey(0)
+        cv2.imshow("YOLOv12 Deployment View - Press any key to close", annotated_frame)
+        cv2.waitKey(0)
     cv2.destroyAllWindows()
 
 def run_folder_inference(model, folder_path, conf_threshold):
